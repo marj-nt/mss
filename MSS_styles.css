@@ -1,0 +1,886 @@
+/*1170 x 780px*/
+
+/*** Keyframes - Animations used on navigation bar ***/
+
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+/*** ELEMENTS REPEATED ON PAGES ***/
+
+#header-row {
+    width: 100%;
+    text-align: center;
+}
+
+#header-col-1 {
+    background: blue;
+    width: 25%;
+}
+
+#header-col-2 {
+    text-align: center;
+    background: black;
+
+    width: 75%;
+}
+
+.logo {
+    text-align: left;
+    vertical-align: middle;
+    width: 15vw;
+    box-sizing: border-box;
+
+}
+
+.middle {
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    
+
+    box-sizing: border-box;
+    padding: 20px 0px;
+
+}
+
+.test {
+    float: right;
+}
+
+.rectangle-header {
+    width: 100%;
+    background: linear-gradient(#FFFFFF, #8BE3F2, #6ADBEE,
+    #40D1E9, #00C2E2);
+}
+
+#MSSheader {
+    color: black;
+    font-family: "Humble";
+    font-size: 7vw;
+    
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+
+    
+}
+
+#tagline {
+    color: black;
+    font-family: "Megan June";
+    font-size: 2vw;
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+/***  Navigation Bar ** */
+
+.row {
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+
+#nav1, #nav2, #nav3, #nav4, #nav5 {
+
+    box-sizing: border-box;
+    margin: 0px 5px;
+}
+
+#nav1 a, #nav2 a, #nav3 a, #nav4 a, #nav5 a {
+
+    background: linear-gradient(#7ED7E3, #C2D9DD);
+    opacity: 75%;
+    border-radius: 15px;
+    box-shadow: 0px 1px 1px #409AE2;
+    
+    font-family: "Lucida Grande", bold;
+    color: #133A68;
+    font-size: 120%;
+    text-shadow: 0px 1px 5px #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+
+    display: block;
+    text-align: center;
+
+    height: 60px;
+    line-height: 60px;
+}
+
+#nav1 a:hover, #nav2 a:hover, #nav3 a:hover, #nav4 a:hover, #nav5 a:hover {
+    font-family: "Lucida Grande", bold;
+    color: #133A68;
+    font-size: 120%;
+    text-shadow: 0px 1px 5px #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+
+    display: block;
+    text-align: center;
+
+    height: 60px;
+
+    box-shadow: 0px 0px 5px 5px #FEDCAE;
+
+    -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+
+
+
+@media screen and (max-width: 1170px) {
+    .container-fluid {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .test{
+        display: none !important;
+    }
+}
+
+/* Responsive small screen nav */
+
+.hamburger {
+    font-family: "Poppins";
+    
+}
+
+.nav-link {
+    font-family: "Lucida Grande", bold;
+    color: #133A68;
+    font-size: 120%;
+    text-shadow: 0px 1px 5px #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    
+}
+
+
+
+/*** Home Body ***/
+
+#welcome {
+    padding: 10px;
+}
+
+.home-intro {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 70px 0px 70px 0px;
+}
+
+/*** FOOTER ***/
+
+.footer {
+    width: 100%;
+    background: linear-gradient(#CFEFF9, #D4F1FA);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px 0px 30px 0px;
+
+    size: 24px;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.footer a {
+    font-family: "Megan June";
+    color: #133A68;
+
+}
+
+#come-swim {
+    text-align: center;
+    font-size: 24px;
+
+    box-sizing: border-box;
+
+}
+
+.footer-text {
+    box-sizing: border-box;
+    margin: -10px 0px -10px 0px;
+}
+
+
+.intro-top, .intro-bottom  {
+    
+    width: 45%;
+    margin: 0 auto;
+    padding: 50px 0px 50px 0px;
+    
+    font-family: "Freight";
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    line-height: 25px;
+    color: #133A68;
+    text-align: left;
+}
+
+.home-container-pics {
+    width: 100%;
+}
+
+.kids-pic {
+    box-sizing: border-box;
+    padding: 10px 30px;
+}
+
+.kids-container {
+
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+    background-color: #C4EAF7;
+
+}
+
+.kids-container img {
+
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.red-script {
+    
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+
+    color: #D0021B;
+    font-family: "SignPainter", "HouseScript";
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-align: center;
+
+}
+
+.body-top-sandy {
+    background: linear-gradient(rgb(245, 223, 191), #FFFFFF);
+    box-sizing: border-box;
+    padding: 30px 0px 30px 0px;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+.body-top-ocean {
+    background: linear-gradient(#FFFFFF, #CCEDF8);
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.body-bottom-blue {
+    background: linear-gradient(#FFFFFF, #08B1E3);
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 60px 0px 60px 0px;
+
+}
+
+/*** HOME - GOALS AND SERVICES ***/
+
+.goals-container {
+    width: 80%;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+#goals-title {
+    border-bottom: 1px solid #4A90E2;
+}
+
+
+.goals-icons {
+    box-sizing: border-box;
+    padding: 40px 0px 40px 0px;
+}
+
+.goals-heading {
+    
+    font-family: "Megan June";
+    font-size: 20px;
+    color: #D0021B;
+    letter-spacing: 1.5px;
+    line-height: 37px;
+
+    text-align: center;
+}
+
+.goals-text {
+
+    width: 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px 0px 10px 0px;
+
+    font-family: "Poppins", "Regular", 30px;
+    color: #133A68;
+    letter-spacing: 1.5px;
+    line-height: 25px;
+
+    text-align: center;
+
+}
+
+
+.services-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+
+    box-sizing: border-box;
+    padding: 20px 0px;
+}
+
+#services-1, #services-2 {
+    box-sizing: border-box;
+    padding: 55px 0px 55px 0px;
+}
+
+
+#services-1 {
+    background: linear-gradient(to right bottom,
+    #D1284A 50%, #D0021B 50%);
+}
+
+#services-2 {
+    background: linear-gradient(to right bottom,
+    #4FC0F8 50%, #44B8F8 50%);
+}
+
+.services-heading {
+    font-family: "SignPainter";
+    color: white;
+    font-size: 60px;
+}
+
+#services-1 a:hover, #services-2 a:hover {
+    text-decoration: none;
+}
+
+#services-1 h3:hover, #services-2 h3:hover {
+
+    color: #EFEB8B;
+
+}
+
+
+
+.makenna-pic-container {
+    max-width: 95%;
+    text-align: center;
+    padding: 20px 0px 30px 0px;
+    margin: 0 auto;
+}
+
+#certif-row {
+    font-family: "Megan June";
+}
+
+.certif-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#certif-1, #certif-2, #certif-3, #certif-4 {
+    width: 50%;
+}
+
+.certif-container img {
+    width: 75%;
+    height: 100wv;
+    padding: 30px 0px 30px 0px;
+}
+
+/*** PROGRAMS AND PRICES ***/
+
+#programs-title {
+    box-sizing: border-box;
+    padding: 45px 0px;
+}
+
+.programs-container {
+
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+
+    box-sizing: border-box;
+
+
+}
+
+.programs-row {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+.programs-heading {
+    font-family: "Megan June";
+    color: #133A68;
+    font-size: 30px;
+
+    box-sizing: border-box;
+    padding: 30px 0px 0px 0px;
+
+    letter-spacing: 1.25px;
+    line-height: 31px;
+}
+
+.programs-description {
+    font-family: "Poppins";
+    color: #4A4A4A;
+    font-size: 18px;
+
+    letter-spacing: 1.33px;
+    line-height: 23px;
+}
+
+.learn-more {
+   background-color: transparent;
+   border: none;
+
+}
+
+.card {
+    font-family: "Poppins";
+    color: #133A68;
+}
+
+.swimmers-age p {
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: "Freight";
+    color: #133A68;
+    font-size: 18px;
+
+    letter-spacing: 1px;
+    line-height: 30px;
+
+    box-sizing: border-box;
+    padding: 40px 0px 40px 0px;
+}
+
+.skills-pic {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.skills-container {
+
+    width: 75%;
+
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-heading {
+    font-family: "Megan June";
+    font-size: 30px;
+    color: D0021B;
+}
+
+.skills-text {
+    font-family: "Poppins";
+    color: #133A68;
+    font-size: 16px;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    line-height: 20px;
+}
+
+.swimmers-age-text {
+    font-family: "Poppins";
+    color: #133A68;
+    font-size: 18px;
+
+    letter-spacing: 2.25px;
+    line-height: 30px;
+}
+
+.dont-give-up-container {
+    background: linear-gradient(to right bottom,
+    #F8FCFE 50%, #EAF8FC 50%);
+}
+
+.dont-give-up-heading {
+    box-sizing: border-box;
+    padding: 5px 0px;
+}
+
+
+
+.seven-lessons-container, .dont-give-up-container {
+    text-align: center;
+
+    font-family: "Freight", "Text Light";
+    color: #4A4A4A;
+    font-size: 18px;
+
+    letter-spacing: 1px;
+    line-height: 30px;
+
+    box-sizing: border-box;
+    padding: 30px 0px 30px 0px;
+}
+
+.seven-lessons-container a {
+    text-decoration: none;
+    color: #D0021B;
+}
+
+.swimming-challenging {
+    text-align: left;
+}
+
+.patient-and-encouraging {
+    text-align: right;
+}
+
+.seven-lessons-container {
+    background: linear-gradient(to right bottom,
+    #FEFBF6 50%, #FBF5EC 50%);
+}
+
+.seven-lessons-heading, .dont-give-up-heading {
+    font-family: "Megan June";
+    color: #D0021B;
+    font-size: 30px;
+    margin: -5px;
+    
+}
+
+.seven-lessons-heading {
+    font-weight: bold;
+}
+
+
+
+
+.policies-container {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+.safety-heading, .scheduling-cancel-heading {
+    font-family: "Freight";
+    color: #D0021B;
+    font-size: 24px;
+
+    padding: 20px 0px;
+}
+
+.payment-heading, .payment-deadlines {
+    font-family: "Freight";
+    color: rgb(148, 190, 99);
+    font-size: 24px;
+
+    padding: 20px 0px;
+}
+
+
+.safety-container, .scheduling-cancel-container, .pay-container {
+
+    width: 75%;
+    margin: 0 auto;
+
+    font-family: "Freight";
+    color: #133A68;
+    font-size: 16px;
+
+    letter-spacing: 1.5px;
+    line-height: 27px;
+}
+
+.tab {
+    margin-left: 2em;
+    line-height: 30px;
+}
+
+.scheduling-cancel-container a {
+    color:#D0021B;
+    text-decoration: none;
+}  
+
+
+
+
+
+
+
+
+
+/***ABOUT MAKENNA***/
+
+.about-makenna-background, .contact-me-background {
+    text-align: center;
+    background: linear-gradient(#F5DFBF, #FFFFFF);
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: 0 auto; 
+    box-shadow: -1px 0px 0px (rgb(0, 0, 0, 50));
+    padding: 10px;
+}
+
+.contact-me-background {
+    background: linear-gradient(rgb(245, 223, 191), #FFFFFF);
+    display: block;
+}
+
+.about-and-contact-background h4 {
+    padding: 20px 0px 0px 0px;
+}
+
+
+
+
+/*** SCHEDULING ***/
+
+#ready-to-book {
+    padding: 10px 0px 20px 0px;
+}
+.scheduling-intro p {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: "Poppins";
+    color: #133A68;
+    font-size: 20px;
+
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+
+
+
+/*** ABOUT MAKENNA ***/
+
+.about-makenna-text-container {
+
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.about-makenna-text-container p {
+
+    margin: 0 auto;
+    max-width: 95%;
+    box-sizing: border-box;
+
+
+    font-family: "Freight";
+    size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    color: #133A68;
+    text-align: left;
+}
+
+.map-container {
+    width: 80%;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block; 
+    min-height: 50vh;
+}
+
+
+.map-container-left {
+    width: 45%;
+    float: left;
+}
+
+iframe {
+    float: left;
+}
+
+.map-container-right {
+    width: 45%;
+    height: 20vw;
+    float: right;
+    margin: 0 auto;
+
+
+    font-family: "Poppins";
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 31px;
+
+}
+
+.swim-with-us-container {
+    width: 100%;
+    height: 75%;
+    margin: 0 auto;
+}
+
+.map-caption {
+    position: absolute;
+    top: 30;
+    right: 0;
+
+}
+
+#map-caption-top {
+    font-size: 18px;
+    margin: 0 auto;
+    color: #133A68;
+    font-family: "Poppins";
+}
+
+/***Social Media***/
+
+.social-media-container {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+#facebook-col img, #twitter-col img, #instagram-col img {
+    max-width: 50%;
+    max-height: 100wv;
+}
+
+
+
+
+/*** Message Form ***/
+
+.form-container {
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.form-request p {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0 auto;
+
+    color: #133A68;
+}
+
+.form-bottom {
+    box-sizing: border-box;
+    padding: 0px 0px 0px 100px;
+}
+
+.form-bottom label {
+    text-align: left;
+    display: block;
+}
+
+input[type=text], select, textarea {
+    
+    display: block;
+    overflow: auto;
+    
+    width: 60%;
+    height: 3vw;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+
+.form-label {
+    font-family: "Poppins";
+    color: black;
+}
+
+#message-body {
+    width: 90%;
+    height: 25vw;
+}
+
+input[type=submit] {
+    background: lightgrey;
+    border-radius: 10px;
+    color: black;
+
+    position: right;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color:#133A68;
+}
+ 
+

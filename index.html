@@ -14,62 +14,35 @@
             Mermaid's Swim School
         </title>
 
-        <div class="rectangle-header">
+        <div class="rectangle-header container-fluid">
 
-            <div class="header-wrapper">
-                        
-                <img src="images/logo.png" class="logo"/>
-
+            <div class="row header-wrapper">
+                
+                <img src="images/logo_mobile.png" class="logo"/>
+                    
                 <div class="middle">
     
-                        <h1 id="MSSheader">
-                        Mermaid's Swim School
-                        </h1>
-                        
-                        <h2 id="tagline">
-                        Teaching the Central Valley to swim one
-                        fish at a time!
-                        </h2>
+                    <h1 class="MSSheader">
+                    Mermaid's Swim School
+                    </h1>
+                    
+                    <h2 class="tagline">
+                    Teaching the Central Valley to swim one
+                    fish at a time!
+                    </h2>
                 </div>
-                
-                
+
                 <!-- This navbar is for mobile or smaller screens (hamburger) -->
                 
-                <div class ="test">
-                    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-                    aria-expanded="false" aria-label="Toggle navigation">Click<span class="dark-blue-text"><i class="fa fa-bars fa-1x"></i></span></button>
-            
-                <!-- Collapsible content -->
-                <div class="hamburger collapse navbar-collapse" id="navbarSupportedContent1">
-            
-                    <!-- Links -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="MSS_programs_and_prices.html">Programs & Prices</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="MSS_scheduling.html">Scheduling</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="MSS_about_makenna.html">About Makenna</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="MSS_contact_me.html">Contact Me</a>
-                        </li>
-                    </ul>
-                    <!-- Links -->
-            
-                </div>
-                
+                <div class="hamburger-icon-mobile">
+                    <img src="images/hamburger_mobile.png" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                    aria-expanded="false" aria-label="Toggle navigation"/>
                 </div>
 
             </div>
-
+            
             <!-- This navbar is for larger screens or desktops, and animates -->
-            <div class="container-fluid">
+            <div class="container-fluid navigation-container">
                 <div class="row">
 
                     <div class="col" id="nav1">
@@ -88,10 +61,31 @@
                     <div class="col" id="nav5">
                         <a href="MSS_contact_me.html">Contact Me!</a>
                     </div>
-
                 </div>
-
-            </div> <!-- end container-fluid -->
+            </div> <!-- end navigation-container -->
+                
+            <!-- Collapsible content, mobile, after header-wrapper -->
+            <div class="hamburger navigation-container-mobile collapse navbar-collapse" id="navbarSupportedContent1">
+                
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_programs_and_prices.html">Programs & Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_scheduling.html">Scheduling</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_about_makenna.html">About Makenna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_contact_me.html">Contact Me</a>
+                    </li>
+                </ul>
+                    
+            </div> <!-- end navigation-container-mobile -->
 
         </div> <!-- end rectangle-header -->
         
@@ -102,7 +96,7 @@
     <body>
 
         <div class="kids-container">
-            <img src="images/piranhas.jpg" alt="Makenna and the kids swim team" data-aos="fade-up"
+            <img src="images/piranhas_mobile.jpg" alt="Makenna and the kids swim team" data-aos="fade-up"
             data-aos-anchor-placement="top-center" data-aos-duration="1200"/>
         </div>
 
@@ -112,7 +106,7 @@
 
             <div class="home-intro" data-aos="fade-up" ata-aos-anchor-placement="top-top">
 
-                <h3 class="red-script">Welcome!</h3>
+                <h3 class="red-script welcome-title">Welcome!</h3>
             
                 <p class="intro-top">
                     Looking to enroll yourself or your child in private
@@ -130,6 +124,22 @@
 
                     </div>
 
+                    <!-- ! IMPORTANT ! Remember to program feedback for buttons. -->
+
+                    <!-- Mobile view -->
+                    <div class="home-pics-mobile">
+                        <img src="images/mak_with_kids_1_mobile.jpg" class="kids-pic-mobile"
+                        data-aos="fade-left" data-aos-anchor-placement="top-center"/>
+                        <a href="MSS_programs_and_prices.html">
+                            <button class="btn services-buttons-mobile" id="private-lessons-mobile" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                            Private Lessons</button>
+                        </a>
+                        <a href="MSS_programs_and_prices.html">
+                            <button class="btn services-buttons-mobile"id="party-lifeguard-mobile" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                                Party Lifeguard</button>
+                        </a>
+                    </div>
+
                 <p class="intro-bottom">
                     From basic survival skills to competition, we focus on
                     improvement with each lesson. With a patient hand in our
@@ -143,28 +153,34 @@
 
         <div class="body-bottom-blue">
 
-            <div class="goals-container" data-aos="fade-up" data-aos-easing= "ease-in-sine">
+            <div class="goals-container" data-aos="fade-up" data-aos-easing="ease-in-sine">
                 
                 <h3 class="red-script" id="goals-title">Our Goals</h3>
 
-                <div class="row" id="goals-row">
+                <div class="row goals-row">
                     
-                    <div class="col" id="goals-col-1">
-                        
+                    <div class="col goals-col goals-col-1">
+
                         <img src="images/confidence.png"
                         class="goals-icons"/>
-                        
+
+                        <!-- Mobile use --> <img src="images/confidence_mobile.png" class="goals-icons-mobile">
+                      
                         <h5 class="goals-heading">Confidence</h5>
                     
-                        <p class="goals-text"></p>
+                        <p class="goals-text">
                             Build confidence and comfort to be an
                             independent swimmer!
                         </p>
+
                     </div>
-                     <div class="col" id="goals-col-2">
+
+                     <div class="col goals-col goals-col-2">
                         
                         <img src="images/technique.png"
                         class="goals-icons"/>
+
+                        <!-- Mobile use --> <img src="images/technique_mobile.png" class="goals-icons-mobile">
                         
                         <h5 class="goals-heading">Technique</h5>
                     
@@ -173,9 +189,11 @@
                         </p>
                         
                     </div>
-                     <div class="col" id="goals-col-3">
+                     <div class="col goals-col goals-col-3">
                         
                         <img src="images/fun.png" class="goals-icons"/>
+
+                        <!-- Mobile use --> <img src="images/fun_mobile.png" class="goals-icons-mobile">
                         
                         <h5 class="goals-heading">Fun</h5>
                         
@@ -185,8 +203,8 @@
                         </p>
                         
                     </div>
-                </div>
-            </div>
+                </div> <!-- end of goals-row -->
+            </div> <!-- end of goals-container -->
 
             <div class="services-container" data-aos="flip-up" data-aos-anchor-placement="top-center">
                 
@@ -194,7 +212,7 @@
 
                 <div class="row" id="services-row">
                     <div class="col" id="services-1">
-                        <a href="MSS_programs_and_prices.html/">
+                        <a href="MSS_programs_and_prices.html">
                             <h3 class="services-heading">
                                 Private
                                 <br>
@@ -216,10 +234,9 @@
 
             <div class="certif-container" data-aos="fade-up" data-aos-anchor-placement="top-center">
 
-                
                 <h3 class="red-script" id="certif-title">Certifications</h3>
 
-                <div class="row" id="certif-row">
+                <div class="row certif-row">
                     <div class="col" id="certif-1">
                         <img src="images/first_aid.png"/>
                         <h5 class="certif-heading">First Aid</h5>
@@ -237,10 +254,31 @@
                         <h5 class="certif-heading">Over 100 kids and 5
                         teams!</h5>
                     </div>
-                </div>
+                </div> <!-- End certif-row -->
                 
-            </div>
-                    
+            </div> <!-- End certif-container -->
+
+            
+            <!-- Certifications container for mobile -->
+            <div class="certif-container-mobile" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div class="row certif-row-mobile">
+                    <img src="images/first_aid_mobile.png"/>
+                    <h4 class="certif-heading-mobile">First Aid</h4>
+                </div>
+                <div class="row certif-row-mobile">
+                    <img src="images/aed_mobile.png"/>
+                    <h4 class="certif-heading-mobile">AED</h4>
+                </div>
+                <div class="row certif-row-mobile">
+                    <img src="images/cpr_mobile.png"/>
+                    <h4 class="certif-heading-mobile">CPR</h4>
+                </div>
+                <div class="row certif-row-mobile">
+                    <img src="images/100_kids_mobile.png"/>
+                    <h4 class="certif-heading-mobile">Over 100 kids and 5 teams!</h4>
+                </div>
+            </div> <!-- End certif-container-mobile -->
+         
         </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -269,7 +307,7 @@
     
     </body>
     <footer class="footer">
-        <h3 class="red-script" id="come-swim">Come swith us today!</h3>
+        <h3 class="red-script come-swim">Come swith us today!</h3>
         <p class="footer-text">
             <a href="tel:15595304038">&#x260E; (559) 530 - 4038</a>
             <br>

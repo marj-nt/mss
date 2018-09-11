@@ -11,59 +11,93 @@
             Mermaid's Swim School
         </title>
 
-        <div class="rectangle-header">
+        <div class="rectangle-header container-fluid">
 
-                <div class="header-wrapper">
-                            
-                    <img src="images/logo.png" class="logo"/>
+            <div class="row header-wrapper">
+                
+                <img src="images/logo_mobile.png" class="logo"/>
+                    
+                <div class="middle">
     
-                    <div class="middle">
+                    <h1 class="MSSheader">
+                    Mermaid's Swim School
+                    </h1>
+                    
+                    <h2 class="tagline">
+                    Teaching the Central Valley to swim one
+                    fish at a time!
+                    </h2>
+                </div>
+
+                <!-- This navbar is for mobile or smaller screens (hamburger) -->
+                
+                <div class="hamburger-icon-mobile">
+                    <img src="images/hamburger_mobile.png" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                    aria-expanded="false" aria-label="Toggle navigation"/>
+                </div>
+
+            </div>
+            
+            <!-- This navbar is for larger screens or desktops, and animates -->
+            <div class="container-fluid navigation-container">
+                <div class="row">
+
+                    <div class="col" id="nav1">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="col" id="nav2">
+                        <a href="MSS_programs_and_prices.html">Programs &
+                        Prices</a>
+                    </div>
+                    <div class="col" id="nav3">
+                        <a href="MSS_scheduling.html">Scheduling</a>
+                    </div>
+                    <div class="col" id="nav4">
+                        <a href="MSS_about_makenna.html">About Makenna</a>
+                    </div>
+                    <div class="col" id="nav5">
+                        <a href="MSS_contact_me.html">Contact Me!</a>
+                    </div>
+                </div>
+            </div> <!-- end navigation-container -->
+                
+            <!-- Collapsible content, mobile, after header-wrapper -->
+            <div class="hamburger navigation-container-mobile collapse navbar-collapse" id="navbarSupportedContent1">
+                
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_programs_and_prices.html">Programs & Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_scheduling.html">Scheduling</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_about_makenna.html">About Makenna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_contact_me.html">Contact Me</a>
+                    </li>
+                </ul>
+                    
+            </div> <!-- end navigation-container-mobile -->
+
+        </div> <!-- end rectangle-header -->
         
-                            <h1 id="MSSheader">
-                            Mermaid's Swim School
-                            </h1>
-                            
-                            <h2 id="tagline">
-                            Teaching the Central Valley to swim one
-                            fish at a time!
-                            </h2>
-    
-                    </div>
-    
-                </div>
-    
-                <div class="container-fluid">
-                    <div class="row">
-    
-                        <div class="col" id="nav1">
-                            <a href="index.html">Home</a>
-                        </div>
-                        <div class="col" id="nav2">
-                            <a href="MSS_programs_and_prices.html">Programs &
-                            Prices</a>
-                        </div>
-                        <div class="col" id="nav3">
-                            <a href="MSS_scheduling.html">Scheduling</a>
-                        </div>
-                        <div class="col" id="nav4">
-                            <a href="MSS_about_makenna.html">About Makenna</a>
-                        </div>
-                        <div class="col" id="nav5">
-                            <a href="MSS_contact_me.html">Contact Me!</a>
-                        </div>
-    
-                    </div>
-                </div>
+    </head>
 
         
     </head>
     
     <body>
 
-        <div class="body-top-ocean">
+        <div class="body-top-ocean body-top-sandy-mobile">
 
-            <div class="about-makenna-background">
-                <h4 class="red-script animated fadeInUp">About Makenna</h4>
+            <div class="about-makenna-background"> <!-- hidden in mobile -->
+                
+                <h4 class="red-script about-makenna-title-mobile animated fadeInUp">About Makenna</h4>
 
                 <div class="makenna-pic-container animated fadeIn">
                     <img src="images/makenna_icon.png"/>
@@ -84,9 +118,35 @@
                     </p>
                 </div>
 
-            </div>
+            </div> <!-- end about-makenna-background-->
+            
+            <div class="about-makenna-container-mobile">
+                    
+                    <div class="makenna-pic-mobile animated fadeIn">
+                        <img src="images/makenna_icon.png"/>
+                    </div>
 
-        </div>
+                    <h4 class="red-script about-makenna-title-mobile animated fadeInUp">About Makenna</h4>
+    
+                    <div class="about-makenna-text-container-mobile animated fadeIn">
+                        <p> Instructor Makenna Mason has been passionately
+                        swimming since the age of 6 and has taught and coached
+                        for 4+ years.  She is certified in CPR, first aid,
+                        and AED.
+                        <br>
+                        <br>
+                        Makenna believes that swimming is an important 
+                        survival skill that can grow into a fun and competitive
+                        hobby!  In the fall, she plans to attend Sacramento
+                        State to earn her B.S. in Psychology, but will
+                        continue to offer swimming lessons to her community.
+                        </p>
+                    </div>
+    
+                </div>
+    
+
+        </div> <!-- end body-top-ocean-->
 
 
 

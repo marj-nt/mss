@@ -9,49 +9,82 @@
             Mermaid's Swim School
         </title>
 
-        <div class="rectangle-header">
+        <div class="rectangle-header container-fluid">
 
-                <div class="header-wrapper">
-                            
-                    <img src="images/logo.png" class="logo"/>
+            <div class="row header-wrapper">
+                
+                <img src="images/logo_mobile.png" class="logo"/>
+                    
+                <div class="middle">
     
-                    <div class="middle">
+                    <h1 class="MSSheader">
+                    Mermaid's Swim School
+                    </h1>
+                    
+                    <h2 class="tagline">
+                    Teaching the Central Valley to swim one
+                    fish at a time!
+                    </h2>
+                </div>
+
+                <!-- This navbar is for mobile or smaller screens (hamburger) -->
+                
+                <div class="hamburger-icon-mobile">
+                    <img src="images/hamburger_mobile.png" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                    aria-expanded="false" aria-label="Toggle navigation"/>
+                </div>
+
+            </div>
+            
+            <!-- This navbar is for larger screens or desktops, and animates -->
+            <div class="container-fluid navigation-container">
+                <div class="row">
+
+                    <div class="col" id="nav1">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="col" id="nav2">
+                        <a href="MSS_programs_and_prices.html">Programs &
+                        Prices</a>
+                    </div>
+                    <div class="col" id="nav3">
+                        <a href="MSS_scheduling.html">Scheduling</a>
+                    </div>
+                    <div class="col" id="nav4">
+                        <a href="MSS_about_makenna.html">About Makenna</a>
+                    </div>
+                    <div class="col" id="nav5">
+                        <a href="MSS_contact_me.html">Contact Me!</a>
+                    </div>
+                </div>
+            </div> <!-- end navigation-container -->
+                
+            <!-- Collapsible content, mobile, after header-wrapper -->
+            <div class="hamburger navigation-container-mobile collapse navbar-collapse" id="navbarSupportedContent1">
+                
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_programs_and_prices.html">Programs & Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_scheduling.html">Scheduling</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_about_makenna.html">About Makenna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_contact_me.html">Contact Me</a>
+                    </li>
+                </ul>
+                    
+            </div> <!-- end navigation-container-mobile -->
+
+        </div> <!-- end rectangle-header -->
         
-                            <h1 id="MSSheader">
-                            Mermaid's Swim School
-                            </h1>
-                            
-                            <h2 id="tagline">
-                            Teaching the Central Valley to swim one
-                            fish at a time!
-                            </h2>
-    
-                    </div>
-    
-                </div>
-    
-                <div class="container-fluid">
-                    <div class="row">
-    
-                        <div class="col" id="nav1">
-                            <a href="index.html">Home</a>
-                        </div>
-                        <div class="col" id="nav2">
-                            <a href="MSS_programs_and_prices.html">Programs &
-                            Prices</a>
-                        </div>
-                        <div class="col" id="nav3">
-                            <a href="MSS_scheduling.html">Scheduling</a>
-                        </div>
-                        <div class="col" id="nav4">
-                            <a href="MSS_about_makenna.html">About Makenna</a>
-                        </div>
-                        <div class="col" id="nav5">
-                            <a href="MSS_contact_me.html">Contact Me!</a>
-                        </div>
-    
-                    </div>
-                </div>
+    </head>
 
         
     </head>
@@ -62,15 +95,16 @@
 
             <div class="contact-me-background">
                
-                <div class=".contact-me">
+                
                 <h4 class="red-script">Contact Me!</h4>
-                </div>
+                
 
                 <div class="map-container">
                     
                     <div class="map-container-left">
 
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.2464637601242!2d-119.6275197847722!3d36.35480860034342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094c33d72d4552d%3A0x3769597e7dff6513!2s9430+Fairview+Pl%2C+Hanford%2C+CA+93230!5e0!3m2!1sen!2sus!4v1533271079565" class=".map" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.2464637601242!2d-119.6275197847722!3d36.35480860034342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094c33d72d4552d%3A0x3769597e7dff6513!2s9430+Fairview+Pl%2C+Hanford%2C+CA+93230!5e0!3m2!1sen!2sus!4v1533271079565"
+                    class="map" frameborder="0" style="border:0" allowfullscreen></iframe>
 
                     </div>
 
@@ -93,30 +127,61 @@
 
                         <!--Container to hold clickable icons for social media-->
 
-                <div class="social-media-container">
-                    
-                        <div class="row" id="social-media-row">
-                            <div class="col" id="facebook-col">
-                                <a href="https://www.facebook.com/makenna.mason.5">
-                                <img src="images/facebook_icon.png" class="grow"/></a>
-                            </div>
-                            <div class="col" id="twitter-col">
-                                <a href="https://twitter.com/makennamason">
-                                <img src="images/twitter_icon.png" class="grow"/></a>
-                            </div>
-                            <div class="col" id="instagram-col">
-                                <a href="https://www.instagram.com/makenna.annemarie/">
-                                <img src="images/instagram_icon.png" class="grow"/></a>
-                            </div>
-    
+                        <div class="social-media-container">
+                            
+                                <div class="row" id="social-media-row">
+                                    <div class="col" id="facebook-col">
+                                        <a href="https://www.facebook.com/makenna.mason.5">
+                                        <img src="images/facebook_icon.png" class="grow"/></a>
+                                    </div>
+                                    <div class="col" id="twitter-col">
+                                        <a href="https://twitter.com/makennamason">
+                                        <img src="images/twitter_icon.png" class="grow"/></a>
+                                    </div>
+                                    <div class="col" id="instagram-col">
+                                        <a href="https://www.instagram.com/makenna.annemarie/">
+                                        <img src="images/instagram_icon.png" class="grow"/></a>
+                                    </div>
+                                </div>
+
                         </div>
-                    </div>
 
-                    </div>
+                    </div> <!--End of map-container-right-->
 
-                </div>
+                </div> <!--End of map-container -->
 
                 
+
+                    
+
+                <div class="container-fluid social-media-container-mobile">
+                    <div class="row social-media-row-mobile">
+                        <div class="col social-media-col-mobile">
+                            <a href="https://www.instagram.com/makenna.annemarie/">
+                                <img src="images/instagram_icon_mobile.png">
+                            </a>
+                        </div>
+                        <div class="col social-media-col-mobile">
+                            <a href="https://www.twitter.com/makennamason/">
+                                <img src="images/twitter_icon_mobile.png">
+                            </a>
+                        </div>
+                        <div class="col social-media-col-mobile">
+                            <a href="https://www.facebook.com/makenna.mason.5/">
+                                <img src="images/facebook_icon_mobile.png">
+                            </a>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3213.2464637601242!2d-119.6275197847722!3d36.35480860034342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8094c33d72d4552d%3A0x3769597e7dff6513!2s9430+Fairview+Pl%2C+Hanford%2C+CA+93230!5e0!3m2!1sen!2sus!4v1533271079565"
+                    class="map map-mobile" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    
+                    <span class="map-caption-mobile">
+                        9430 Fairview Place &#x2219; Hanford, CA 93230
+                    </span>
 
                 <!--Filling in the form to leave a message-->
 
@@ -131,22 +196,22 @@
                         <form action="action_page.php">
 
                         <label for="fname" class="form-label">First Name</label>
-                        <input type="text" id="fname" name="firstname">
+                        <input type="text" class="input-box" id="fname" name="firstname">
 
                         <label for="lname" class="form-label">Last Name</label>
-                        <input type="text" id="lname" name="lastname">
+                        <input type="text" class="input-box"id="lname" name="lastname">
 
                         <label for="phone-number" class="form-label">Phone Number</label>
-                        <input type="text" id="phone-number"
+                        <input type="text" class="input-box" id="phone-number"
                         name="phonenumber"
                         placeholder= "xxx-xxx-xxxx">
 
                         <label for="sender-email" class="form-label">Email</label>
-                        <input type="text" id="sender-email"
+                        <input type="text" class="input-box" id="sender-email"
                         name="senderemail">
 
                         <label for="message-body" class="form-label">Message</label>
-                        <textarea id="message-body"
+                        <textarea id="message-body" class="input-box"
                         name="messagebody" placeholder="Leave us your questions or reviews!"></textarea>
 
                         <input class="send-button" type="submit" value="Send Message">

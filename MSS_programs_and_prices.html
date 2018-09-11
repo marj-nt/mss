@@ -10,50 +10,80 @@
             Mermaid's Swim School
         </title>
 
-        <div class="rectangle-header">
+        <div class="rectangle-header container-fluid">
 
-                <div class="header-wrapper">
-                            
-                    <img src="images/logo.png" class="logo"/>
+            <div class="row header-wrapper">
+                
+                <img src="images/logo_mobile.png" class="logo"/>
+                    
+                <div class="middle">
     
-                    <div class="middle">
-        
-                            <h1 id="MSSheader">
-                            Mermaid's Swim School
-                            </h1>
-                            
-                            <h2 id="tagline">
-                            Teaching the Central Valley to swim one
-                            fish at a time!
-                            </h2>
-    
-                    </div>
-    
+                    <h1 class="MSSheader">
+                    Mermaid's Swim School
+                    </h1>
+                    
+                    <h2 class="tagline">
+                    Teaching the Central Valley to swim one
+                    fish at a time!
+                    </h2>
                 </div>
-    
-                <div class="container-fluid">
-                    <div class="row">
-    
-                        <div class="col" id="nav1">
-                            <a href="index.html">Home</a>
-                        </div>
-                        <div class="col" id="nav2">
-                            <a href="MSS_programs_and_prices.html">Programs &
-                            Prices</a>
-                        </div>
-                        <div class="col" id="nav3">
-                            <a href="MSS_scheduling.html">Scheduling</a>
-                        </div>
-                        <div class="col" id="nav4">
-                            <a href="MSS_about_makenna.html">About Makenna</a>
-                        </div>
-                        <div class="col" id="nav5">
-                            <a href="MSS_contact_me.html">Contact Me!</a>
-                        </div>
-    
+
+                <!-- This navbar is for mobile or smaller screens (hamburger) -->
+                
+                <div class="hamburger-icon-mobile">
+                    <img src="images/hamburger_mobile.png" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
+                    aria-expanded="false" aria-label="Toggle navigation"/>
+                </div>
+
+            </div>
+            
+            <!-- This navbar is for larger screens or desktops, and animates -->
+            <div class="container-fluid navigation-container">
+                <div class="row">
+
+                    <div class="col" id="nav1">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="col" id="nav2">
+                        <a href="MSS_programs_and_prices.html">Programs &
+                        Prices</a>
+                    </div>
+                    <div class="col" id="nav3">
+                        <a href="MSS_scheduling.html">Scheduling</a>
+                    </div>
+                    <div class="col" id="nav4">
+                        <a href="MSS_about_makenna.html">About Makenna</a>
+                    </div>
+                    <div class="col" id="nav5">
+                        <a href="MSS_contact_me.html">Contact Me!</a>
                     </div>
                 </div>
-      </div> 
+            </div> <!-- end navigation-container -->
+                
+            <!-- Collapsible content, mobile, after header-wrapper -->
+            <div class="hamburger navigation-container-mobile collapse navbar-collapse" id="navbarSupportedContent1">
+                
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_programs_and_prices.html">Programs & Prices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_scheduling.html">Scheduling</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_about_makenna.html">About Makenna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="MSS_contact_me.html">Contact Me</a>
+                    </li>
+                </ul>
+                    
+            </div> <!-- end navigation-container-mobile -->
+
+        </div> <!-- end rectangle-header -->
 
         
     </head>
@@ -64,7 +94,7 @@
 
                 
                     
-                <h3 class="red-script" id="programs-title">What we can
+                <h3 class="red-script programs-title">What we can
                     provide for you!
                 </h3>
 
@@ -80,13 +110,13 @@
                                    
                                     <!-- Dropdown button when clicked will show/hide dropdown for Babies & Children -->
                                     <button class="learn-more" type="button" data-toggle="collapse" 
-                                    data-target="#collapse-babies" aria-expanded="false" 
-                                    aria-controls="collapse-babies">&#x25bc;</button>
+                                    data-target=".collapse-babies" aria-expanded="false" 
+                                    aria-controls=".collapse-babies">&#x25bc;</button>
 
                                     </p>
 
                                     <!-- The hidden dropdown for Babies & Children -->
-                                    <div class="collapse" id="collapse-babies">
+                                    <div class="collapse collapse-babies">
                                         <!-- Make CSS style on "card" not "collapse" to prevent transition -->
                                         <div class="card card-body">
                                           <b>Infants</b> are slowly introduced to the water by being safely held at all times. We create a relationship
@@ -114,13 +144,13 @@
 
                                 <!-- Dropdown button when clicked will show/hide dropdown for All Ages -->
                                 <button class="learn-more" type="button" data-toggle="collapse" 
-                                data-target="#collapse-all-ages" aria-expanded="false" 
-                                aria-controls="collapse-all-ages">&#x25bc;</button>
+                                data-target=".collapse-all-ages" aria-expanded="false" 
+                                aria-controls=".collapse-all-ages">&#x25bc;</button>
 
                                 </p>
 
                                 <!-- The hidden dropdown for All ages -->
-                                <div class="collapse" id="collapse-all-ages">
+                                <div class="collapse collapse-all-ages">
                                     <div class="card card-body">
                                       <b>Older Children</b> are allowed to center lessons around competitive swimming.
                                       Standard lessons are similar to those for younger children with an emphasis on safety
@@ -140,13 +170,13 @@
 
                                     <!-- Dropdown button when clicked will show/hide dropdown for All Ages -->
                                 <button class="learn-more" type="button" data-toggle="collapse" 
-                                data-target="#collapse-party-lifeguard" aria-expanded="false" 
-                                aria-controls="collapse-party-lifeguard">&#x25bc;</button>
+                                data-target=".collapse-party-lifeguard" aria-expanded="false" 
+                                aria-controls=".collapse-party-lifeguard">&#x25bc;</button>
 
                                 </p>
 
-                                <!-- The hidden dropdown for All ages -->
-                                <div class="collapse" id="collapse-party-lifeguard">
+                                <!-- The hidden dropdown for party lifeguard -->
+                                <div class="collapse collapse-party-lifeguard">
                                     <div class="card card-body" id="card-party-lifeguard">
                                       Make sure that your pool party is fun and safe!
                                       <br>
@@ -156,11 +186,96 @@
                                       Lifeguard is certified in First Aid, CPR, and AED.
                                     </div>
                                 </div>
-                                    </p>
-                                </div>
+                            </div>  
+                            
                         </div>
-                    </div>
 
+                        
+
+                    </div> <!-- End of programs-container -->
+
+                    <!-- Programs in mobile layout -->
+
+                    <div class="programs-container-mobile">
+
+                        <div class="row programs-row-mobile">
+                            <div class="col programs-col-mobile-1">
+                                <img src="images/babies_pic_mobile.png"
+                                data-toggle="collapse" 
+                                data-target=".babies-and-children-collapse-mobile" aria-expanded="false" 
+                                aria-controls="babies-and-children-collapse-mobile"/>
+                            </div>
+                            <div class="col programs-col-mobile-2">
+                                <h4 class="programs-heading-mobile">Babies & Children</h4>
+                                <p class="programs-description-mobile">$20 / half-hour session</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse babies-and-children-collapse-mobile">
+                            <div class="card card-body">
+                                <b>Infants</b> are slowly introduced to the water by being safely held at all times. We create a relationship
+                                with the water early by playing, swimming, and blowing bubbles! This is also a great way for infants to
+                                practice physical development skills. Pool is heated
+                                to at least 90&#8457;. 
+                                <br>
+                                <br>
+                                <b>Younger children</b> are taught how to be safe and responsible
+                                in the water. Short distance swimming is good for children of this
+                                age. Depending on the child's skill level, we work on breathing,
+                                floating, and paddling. We want to encourage independent swimming
+                                and building good muscle memory early on!
+                            </div>
+                        </div>
+
+                        <div class="row programs-row-mobile">
+                            <div class="col programs-col-mobile-1">
+                                <img src="images/kids_pic_mobile.png" data-toggle="collapse" 
+                                data-target=".all-ages-collapse-mobile" aria-expanded="false" 
+                                aria-controls=".all-ages-collapse-mobile"/>
+                            </div>
+                            <div class="col programs-col-mobile-2">
+                                <h4 class="programs-heading-mobile">All Ages</h4>
+                                <p class="programs-description-mobile">$25 / half-hour session</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse all-ages-collapse-mobile">
+                            <div class="card card-body">
+                                <b>Older Children</b> are allowed to center lessons around competitive swimming.
+                                    Standard lessons are similar to those for younger children with an emphasis on safety
+                                    and fundamentals.
+                                    <br>
+                                    <br>
+                                    <b>Teens & Adults</b> are encouraged to work on their relationship with the water at any level.
+                                    This includes first-time swimmers that want to overcome fear, as well as adult
+                                    swimmers that would like to improve their strokes for competition.  It's never too late to learn!
+                            </div>
+                        </div>
+
+                        <div class="row programs-row-mobile">
+                            <div class="col programs-col-mobile-1">
+                                <img src="images/party_lifeguard_mobile.png"
+                                data-toggle="collapse" 
+                                data-target=".party-lifeguard-mobile-collapse" aria-expanded="false" 
+                                aria-controls=".party-lifeguard-mobile-collapse"/>
+                            </div>
+                            <div class="col programs-col-mobile-2">
+                                <h4 class="programs-heading-mobile">Party Lifeguard</h4>
+                                <p class="programs-description-mobile">$40 / hour</p>
+                            </div>
+                        </div>
+
+                        <div class="collapse party-lifeguard-mobile-collapse">
+                            <div class="card card-body">
+                                Make sure that your pool party is fun and safe! Hiring a lifeguard ensures that all swimmers can enjoy themselves
+                                while someone is ready and watching the water at all times. Lifeguard is certified in First Aid, CPR, and AED.
+                            </div>
+                        </div>
+
+                    </div> <!--End of programs-container-mobile-->
+                    
+                    
+                    
         
 
                         <div class="swimmers-age">
@@ -226,10 +341,35 @@
                                        
                                     </div>
                                 </div>
+                            </div> <!-- End of skills-container -->
+
+                    
+                    <div class="skills-container-mobile">
+                        <div class="row skills-row-mobile">
+                            <div class="col skills-col-mobile">
+                                <img src="images/beginner_mobile.png"/>
+                                <br>
+                                <h4 class="skills-heading-mobile">Beginner</h4>
+                            </div>
+                            <div class="col skills-col-mobile">
+                                <img src="images/intermediate_mobile.png"/>
+                                <br>
+                                <h4 class="skills-heading-mobile">Intermediate</h4>
+                            </div>
+                            <div class="col skills-col-mobile">
+                                <img src="images/advanced_mobile.png"/>
+                                <br>
+                                <h4 class="skills-heading-mobile">Advanced</h4>
                             </div>
                         </div>
+                    </div>
+
+                            
+            </div> <!-- End of body-top-sandy -->
+                        
 
                 
+    
         <div class="dont-give-up-container" data-aos="fade-up" data-aos-anchor-placement="bottom">
             <p class="dont-give-up-text">
                 <span class="swimming-challenging">
@@ -266,7 +406,7 @@
 
             <div class="policies-container" data-aos="fade-up" data-aos-anchor-placement="top-center">
 
-                <h3 class="red-script">Our Policies</h3>
+                <h3 class="red-script our-policies">Our Policies</h3>
                 
                 <div class="safety-container">
     
@@ -386,7 +526,7 @@
     </body>
 
     <footer class="footer">
-        <h3 class="red-script" id="come-swim">Come swith us today!</h3>
+        <h3 class="red-script come-swim">Come swith us today!</h3>
         <p class="footer-text">
             <a href="tel:15595304038">&#x260E; (559) 530 - 4038</a>
             <br>

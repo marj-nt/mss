@@ -1,16 +1,16 @@
 @font-face {
     font-family: "Humble";
-    src: url("css/fonts/Humble.ttf");
+    src: url("../fonts/Humble.ttf");
 }
 
 @font-face {
     font-family: "Megan June";
-    src: url("css/fonts/Megan_June.otf");
+    src: url("../fonts/Megan_June.otf");
 }
 
 @font-face {
     font-family: "Poppins";
-    src: url("css/fonts/Poppins_Regular.otf")
+    src: url("../fonts/Poppins_Regular.otf")
 }
 
 /*** Keyframes - Animations used on navigation bar ***/

@@ -193,13 +193,10 @@
 
 
                     <div class="form-bottom">
-                        <form action="action_page.php">
+                        <form action="contactform.php" method="post">
 
-                        <label for="fname" class="form-label">First Name</label>
-                        <input type="text" class="input-box" id="fname" name="firstname">
-
-                        <label for="lname" class="form-label">Last Name</label>
-                        <input type="text" class="input-box"id="lname" name="lastname">
+                        <label for="name" class="form-label">First and Last Name</label>
+                        <input type="text" class="input-box" id="name" name="name">
 
                         <label for="phone-number" class="form-label">Phone Number</label>
                         <input type="text" class="input-box" id="phone-number"
@@ -214,7 +211,7 @@
                         <textarea id="message-body" class="input-box"
                         name="messagebody" placeholder="Leave us your questions or reviews!"></textarea>
 
-                        <input class="send-button" type="submit" value="Send Message">
+                        <input class="send-button" type="submit" value="Send Message" name="submit">
 
                         </form>
                     </div>

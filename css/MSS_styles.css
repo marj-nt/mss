@@ -1,19 +1,26 @@
 @font-face {
-    font-family: "Humble";
-    src: url("/css/fonts/Humble.ttf");
-    src: url("/css/fonts/Humble.ttf") format("truetype");
+    font-family: 'Humble';
+    src: url('/css/fonts/humble.woff2') format('woff2'),
+         url('/css/fonts/humble.woff') format('woff'),
+         url('/css/fonts/humble.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Megan June";
-    src: url("/css/fonts/Megan_June.otf");
+    font-family: 'Megan June';
+    src: url('/css/fonts/megan_junewoff2') format('woff2'),
+         url('/css/fonts/megan_june.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: "Poppins";
-    src: url("/css/fonts/Poppins_Regular.otf")
+    font-family: 'Poppins';
+    src: url('/css/fonts/poppins_regular.woff2') format('woff2'),
+         url('/css/fonts/poppins_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*** Keyframes - Animations used on navigation bar ***/
@@ -65,7 +72,7 @@
 
 
 
-@media (min-width: 1281px) {
+@media (min-width: 376px) {
   
     .hamburger-icon-mobile, .home-pics-mobile, .goals-icons-mobile, .certif-container-mobile, 
     .about-makenna-container-mobile, .programs-container-mobile, .skills-container-mobile, 
@@ -198,21 +205,6 @@
     .navigation-container {
         display: none !important;
     }
-}
-
-@media screen and (min-width: 1170px) {
-    .test{
-        display: none !important;
-    }
-}
-
-
-
-
-
-
-@media screen and (max-width: 375px) {
-    
 }
 
 /* Responsive small screen nav */
@@ -362,15 +354,14 @@
 .body-top-sandy {
     background: linear-gradient(rgb(245, 223, 191), #FFFFFF);
     box-sizing: border-box;
-    padding: 30px 0px;
-    margin: 0px 0px 0px 0px;
+    padding: 0vw;
     width: 100%;
 }
 
 .body-top-ocean {
     background: linear-gradient(#FFFFFF, #CCEDF8);
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0vw;
     width: 100%;
     text-align: center;
 }
@@ -1287,6 +1278,7 @@ input[type=submit]:hover {
             background: none;
             width: 100%;
             display: inline-block;
+            padding: 0vw;
         }
 
         
@@ -1316,6 +1308,11 @@ input[type=submit]:hover {
         }
 
         #message-body {
+            width: 100%;
+        }
+
+        .form-container {
+            background: #ECECEC;
             width: 100%;
         }
 

@@ -1,6 +1,9 @@
 @font-face {
     font-family: "Humble";
     src: url("/css/fonts/Humble.ttf");
+    src: url("/css/fonts/Humble.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {

@@ -1,26 +1,36 @@
-/* fix */
-
 @font-face {
     font-family: 'Humble';
-    src: url('./css/fonts/humble.woff2') format('woff2'),
-         url('./css/fonts/humble.woff') format('woff'),
-         url('./css/fonts/Humble.ttf') format('truetype');
+    src: url('./fonts/humble.woff2') format('woff2'),
+         url('./fonts/humble.woff') format('woff'),
+         url('./fonts/Humble.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Megan June';
-    src: url('./css/fonts/megan_june.woff2') format('woff2'),
-         url('./css/fonts/megan_june.woff') format('woff');
+    src: url('./fonts/megan_june.woff2') format('woff2'),
+         url('./fonts/megan_june.woff') format('woff'),
+         url('./fonts/Megan_June.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('./css/fonts/poppins_regular.woff2') format('woff2'),
-         url('./css/fonts/poppins_regular.woff') format('woff');
+    src: url('.fonts/poppins_regular.woff2') format('woff2'),
+         url('./fonts/poppins_regular.woff') format('woff'),
+         url('./fonts/Poppins_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Freight';
+    src: url('.fonts/freight_text_light.woff2') format('woff2'),
+         url('./fonts/freight_text_light.woff') format('woff'),
+         url('./fonts/freight_text_light.ttf') format('truetype'),
+         url('./fonts/Freight_Text_Light.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -124,7 +134,7 @@
 
 .MSSheader {
     color: #133A68;
-    font-family: 'Humble';
+    font-family: "Humble";
     font-size: 7vw;
     
     box-sizing: border-box;
@@ -140,7 +150,7 @@
     font-size: 4vw;
     letter-spacing: 3px;
     opacity: 0.5;
-} */
+}
 
 /***  Navigation Bar ** */
 

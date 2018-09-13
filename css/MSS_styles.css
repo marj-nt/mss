@@ -1,24 +1,24 @@
 @font-face {
     font-family: 'Humble';
-    src: url('/css/fonts/humble.woff2') format('woff2'),
-         url('/css/fonts/humble.woff') format('woff'),
-         url('/css/fonts/humble.ttf') format('truetype');
+    src: url('./css/fonts/humble.woff2') format('woff2'),
+         url('./css/fonts/humble.woff') format('woff'),
+         url('./css/fonts/humble.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Megan June';
-    src: url('/css/fonts/megan_junewoff2') format('woff2'),
-         url('/css/fonts/megan_june.woff') format('woff');
+    src: url('./css/fonts/megan_junewoff2') format('woff2'),
+         url('./css/fonts/megan_june.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/css/fonts/poppins_regular.woff2') format('woff2'),
-         url('/css/fonts/poppins_regular.woff') format('woff');
+    src: url('./css/fonts/poppins_regular.woff2') format('woff2'),
+         url('./css/fonts/poppins_regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -122,7 +122,7 @@
 
 .MSSheader {
     color: #133A68;
-    font-family: "Humble";
+    font-family: 'Humble';
     font-size: 7vw;
     
     box-sizing: border-box;

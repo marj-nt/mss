@@ -18,7 +18,7 @@
 
             <div class="row header-wrapper">
                 
-                <img src="images/logo_mobile.png" class="logo"/>
+                <img src="images/logo.png" class="logo" alt="Mermaid Swim School emblem"/>
                     
                 <div class="middle">
     
@@ -32,17 +32,17 @@
                     </h2>
                 </div>
 
-                <!-- This navbar is for mobile or smaller screens (hamburger) -->
+                <!-- Hamburger navbar mobile -->
                 
-                <div class="hamburger-icon-mobile">
+                <div class="hamburger-icon-mobile hidden-lg">
                     <img src="images/hamburger_mobile.png" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
                     aria-expanded="false" aria-label="Toggle navigation"/>
                 </div>
 
-            </div>
+            </div> <!-- end header-wrapper -->
             
-            <!-- This navbar is for larger screens or desktops, and animates -->
-            <div class="container-fluid navigation-container">
+            <!-- Button navbar desktop -->
+            <div class="container-fluid navigation-container-lg hidden-sm">
                 <div class="row">
 
                     <div class="col" id="nav1">
@@ -65,7 +65,7 @@
             </div> <!-- end navigation-container -->
                 
             <!-- Collapsible content, mobile, after header-wrapper -->
-            <div class="hamburger navigation-container-mobile collapse navbar-collapse" id="navbarSupportedContent1">
+            <div class="hamburger navigation-container-sm collapse navbar-collapse" id="navbarSupportedContent1">
                 
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -104,69 +104,64 @@
         
         <div class="body-top-sandy">
 
-            <div class="home-intro" data-aos="fade-up" ata-aos-anchor-placement="top-top">
+            <div class="home-intro-container" data-aos="fade-up" data-aos-anchor-placement="top-center">
 
-                <h3 class="red-script welcome-title">Welcome!</h3>
+                <h3 class="red-script" id="welcome-title">Welcome!</h3>
             
-                <p class="intro-top">
+                <p class="home-intro-text" id="home-intro-top">
                     Looking to enroll yourself or your child in private
                     swimming lessons? We work with <b>all ages</b> and
                     <b>skill levels</b>! Learn from the Central Valley's 
                     own certified instructor, Makenna Mason!
                 </p>
 
-                    <div class="home-container-pics" data-aos="fade-left" data-aos-anchor-placement="top-center">
-                        
-                        <img src="images/mak_with_kids_1.jpg" alt="Makenna coaching with clipboard" class="kids-pic" id="kids-pics-left"/>
+                <!-- ! IMPORTANT ! Remember to program feedback for buttons. -->
+                <!-- Mobile view, solo pic with buttons -->
+                <div class="index-pics-sm hidden-lg" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                    <img src="images/mak_with_kids_1_mobile.jpg" class="kids-pic-mobile"/>
+                    <a href="MSS_programs_and_prices.html">
+                        <button class="btn services-buttons-sm" id="private-lessons-sm"
+                        data-aos="fade-left" data-aos-anchor-placement="top-center">Private Lessons</button>
+                    </a>
+                    <a href="MSS_programs_and_prices.html">
+                        <button class="btn services-buttons-sm" id="party-lifeguard-sm"
+                        data-aos="fade-left" data-aos-anchor-placement="top-center">Party Lifeguard</button>
+                    </a>
+                </div>
 
-                        <img src="images/mak_with_kids_2.jpg" alt="Makenna and kids winning tropy" class="kids-pic" id="kids-pics-right"/>
-                       
+                <!-- Desktop view, side by side pics -->
+                <div class="index-pics-lg hidden-sm" data-aos="fade-left" data-aos-anchor-placement="top-center">
+                    
+                    <img src="images/mak_with_kids_1.jpg" alt="Makenna coaching with clipboard" class="kids-pic" id="kids-pics-left"/>
+                    <img src="images/mak_with_kids_2.jpg" alt="Makenna and kids winning tropy" class="kids-pic" id="kids-pics-right"/>
+                    
+                </div>
 
-                    </div>
-
-                    <!-- ! IMPORTANT ! Remember to program feedback for buttons. -->
-
-                    <!-- Mobile view -->
-                    <div class="home-pics-mobile">
-                        <img src="images/mak_with_kids_1_mobile.jpg" class="kids-pic-mobile"
-                        data-aos="fade-left" data-aos-anchor-placement="top-center"/>
-                        <a href="MSS_programs_and_prices.html">
-                            <button class="btn services-buttons-mobile" id="private-lessons-mobile" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                            Private Lessons</button>
-                        </a>
-                        <a href="MSS_programs_and_prices.html">
-                            <button class="btn services-buttons-mobile"id="party-lifeguard-mobile" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                                Party Lifeguard</button>
-                        </a>
-                    </div>
-
-                <p class="intro-bottom">
+                <p class="home-intro-text" id="home-intro-bottom">
                     From basic survival skills to competition, we focus on
                     improvement with each lesson. With a patient hand in our
                     personal sessions, we can help each swimmer reach their
                     goal!
                 </p>
 
-            </div>
+            </div> <!-- end home-intro-->
 
-        </div>
+        </div> <!-- end body-top-sandy-->
 
         <div class="body-bottom-blue">
 
-            <div class="goals-container" data-aos="fade-up" data-aos-easing="ease-in-sine">
+            <div class="goals-container container-fluid">
                 
-                <h3 class="red-script" id="goals-title">Our Goals</h3>
+                <h3 class="red-script hidden-sm" id="goals-title">Our Goals</h3>
 
                 <div class="row goals-row">
                     
-                    <div class="col goals-col goals-col-1">
+                    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 goals-col" data-aos="fade-up" data-aos-easing="ease-in-sine">
 
-                        <img src="images/confidence.png"
-                        class="goals-icons"/>
+                        <!-- Mobile use --> <img src="images/confidence_mobile.png" class="goals-icons-sm hidden-lg"/>
+                        <!-- Desktop use --><img src="images/confidence.png" class="goals-icons-lg hidden-sm"/>
 
-                        <!-- Mobile use --> <img src="images/confidence_mobile.png" class="goals-icons-mobile">
-                      
-                        <h5 class="goals-heading">Confidence</h5>
+                        <h4 class="goals-heading">Confidence</h5>
                     
                         <p class="goals-text">
                             Build confidence and comfort to be an
@@ -175,139 +170,140 @@
 
                     </div>
 
-                     <div class="col goals-col goals-col-2">
+                     <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 goals-col" data-aos="fade-up" data-aos-easing="ease-in-sine">
                         
-                        <img src="images/technique.png"
-                        class="goals-icons"/>
-
-                        <!-- Mobile use --> <img src="images/technique_mobile.png" class="goals-icons-mobile">
+                        <!-- Mobile use --> <img src="images/technique_mobile.png" class="goals-icons-sm hidden-lg"/>
+                        <!-- Desktop use --><img src="images/technique.png" class="goals-icons-lg hidden-sm"/>
                         
-                        <h5 class="goals-heading">Technique</h5>
+                        <h4 class="goals-heading">Technique</h5>
                     
                         <p class="goals-text">
                             Developing proper technique and form!
                         </p>
                         
                     </div>
-                     <div class="col goals-col goals-col-3">
-                        
-                        <img src="images/fun.png" class="goals-icons"/>
-
-                        <!-- Mobile use --> <img src="images/fun_mobile.png" class="goals-icons-mobile">
-                        
-                        <h5 class="goals-heading">Fun</h5>
-                        
-                        <p class="goals-text">
-                            Creating a fun and productive learning
-                            experience!
-                        </p>
-                        
+                    
+                    <div class="col col-xs-12 col-sm-12 col-md-4 col-lg-4 goals-col" data-aos="fade-up" data-aos-easing="ease-in-sine">
+                    
+                    <!-- Mobile use --> <img src="images/fun_mobile.png" class="goals-icons-sm hidden-lg"/>
+                    <!-- Desktop use --><img src="images/fun.png" class="goals-icons-lg hidden-sm"/>
+                    
+                    <h4 class="goals-heading">Fun</h5>
+                    
+                    <p class="goals-text">
+                        Creating a fun and productive learning
+                        experience!
+                    </p>
+                    
                     </div>
+
                 </div> <!-- end of goals-row -->
+
             </div> <!-- end of goals-container -->
 
-            <div class="services-container" data-aos="flip-up" data-aos-anchor-placement="top-center">
+            <!-- Desktop only -->
+            <div class="services-container-lg hidden-sm container-fluid" data-aos="flip-up" data-aos-anchor-placement="top-center">
                 
-                <h3 class="red-script" id="services-title">Services</h3>
+                <h3 class="red-script" id="services-title-lg">Services</h3>
 
-                <div class="row" id="services-row">
-                    <div class="col" id="services-1">
+                <div class="row services-row-lg">
+
+                    <div class="col" id="services-col-lg-left">
                         <a href="MSS_programs_and_prices.html">
-                            <h3 class="services-heading">
+                            <h3 class="services-lg-white-heading">
                                 Private
                                 <br>
                                 Lessons
                             </h3>
                         </a>
                     </div>
-                    <div class="col" id="services-2">
+
+                    <div class="col" id="services-col-lg-right">
                         <a href="MSS_programs_and_prices.html">
-                            <h3 class="services-heading">
+                            <h3 class="services-lg-white-heading">
                                 Party
                                 <br>
                                 Lifeguard
                             </h3>
                         </a>
                     </div>
+
                 </div>
-            </div>
 
-            <div class="certif-container" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            </div> <!-- end services-container-lg-->
 
+            <!-- Certifications container for mobile -->
+            <div class="certif-container-sm hidden-lg container-fluid" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div class="row certif-row-sm">
+                    <img src="images/first_aid_mobile.png"/>
+                    <h4 class="certif-heading-sm">First Aid</h4>
+                </div>
+                <div class="row certif-row-sm">
+                    <img src="images/aed_mobile.png"/>
+                    <h4 class="certif-heading-sm">AED</h4>
+                </div>
+                <div class="row certif-row-sm">
+                    <img src="images/cpr_mobile.png"/>
+                    <h4 class="certif-heading-sm">CPR</h4>
+                </div>
+                <div class="row certif-row-sm">
+                    <img src="images/100_kids_mobile.png"/>
+                    <h4 class="certif-heading-sm">Over 100 kids and 5 teams!</h4>
+                </div>
+            </div> <!-- End certif-container-mobile -->
+
+            <div class="certif-container-lg container-fluid hidden-sm" data-aos="fade-up" data-aos-anchor-placement="top-center">
                 <h3 class="red-script" id="certif-title">Certifications</h3>
-
-                <div class="row certif-row">
-                    <div class="col" id="certif-1">
-                        <img src="images/first_aid.png"/>
-                        <h5 class="certif-heading">First Aid</h5>
+                <div class="row certif-row-lg">
+                    <div class="col certif-col-lg">
+                        <img src="images/first_aid.png" class="certif-icon-lg"/>
+                        <h5 class="certif-heading-lg">First Aid</h5>
                     </div>
-                    <div class="col" id="certif-2">
+                    <div class="col certif-col-lg" class="certif-icon-lg">
                         <img src="images/aed.png"/>
-                        <h5 class="certif-heading">AED</h5>
+                        <h5 class="certif-heading-lg">AED</h5>
                     </div>
-                    <div class="col" id="certif-3">
+                    <div class="col certif-col-lg" class="certif-icon-lg">
                         <img src="images/cpr.png"/>
-                        <h5 class="certif-heading">CPR</h5>
+                        <h5 class="certif-heading-lg">CPR</h5>
                     </div>
-                    <div class="col" id="certif-4">
+                    <div class="col certif-col-lg" class="certif-icon-lg">
                         <img src="images/100_kids.png"/>
-                        <h5 class="certif-heading">Over 100 kids and 5
+                        <h5 class="certif-heading-lg">Over 100 kids and 5
                         teams!</h5>
                     </div>
                 </div> <!-- End certif-row -->
                 
             </div> <!-- End certif-container -->
 
-            
-            <!-- Certifications container for mobile -->
-            <div class="certif-container-mobile" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                <div class="row certif-row-mobile">
-                    <img src="images/first_aid_mobile.png"/>
-                    <h4 class="certif-heading-mobile">First Aid</h4>
-                </div>
-                <div class="row certif-row-mobile">
-                    <img src="images/aed_mobile.png"/>
-                    <h4 class="certif-heading-mobile">AED</h4>
-                </div>
-                <div class="row certif-row-mobile">
-                    <img src="images/cpr_mobile.png"/>
-                    <h4 class="certif-heading-mobile">CPR</h4>
-                </div>
-                <div class="row certif-row-mobile">
-                    <img src="images/100_kids_mobile.png"/>
-                    <h4 class="certif-heading-mobile">Over 100 kids and 5 teams!</h4>
-                </div>
-            </div> <!-- End certif-container-mobile -->
-         
-        </div>
+        </div> <!-- End body-bottom-blue-->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="bower_components/aos/dist/aos.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-        disable: false,
-        startEvent: 'DOMContentLoaded',
-        initClassName: 'aos-init',
-        animatedClassName: 'aos-animate',
-        useClassNames: false,
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="bower_components/aos/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            disable: false,
+            startEvent: 'DOMContentLoaded',
+            initClassName: 'aos-init',
+            animatedClassName: 'aos-animate',
+            useClassNames: false,
 
-        offset: 120,
-        delay: 0,
-        duration: 400,
-        easing: 'ease',
-        once: false,
-        mirror: false,
-        anchorPlacement: 'top-bottom',
-    });
-  </script>
+            offset: 120,
+            delay: 0,
+            duration: 400,
+            easing: 'ease',
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    </script>
 
-    
     </body>
     <footer class="footer">
-        <h3 class="red-script come-swim">Come swith us today!</h3>
+        <h3 class="red-script come-swim-title">Come swim with us today!</h3>
         <p class="footer-text">
             <a href="tel:15595304038">&#x260E; (559) 530 - 4038</a>
             <br>

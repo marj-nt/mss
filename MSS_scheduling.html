@@ -5,6 +5,8 @@
         
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
                 <link rel="stylesheet" href="css/MSS_styles.css">
+                <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+                <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
                 
                 <title>
                     Mermaid's Swim School
@@ -14,7 +16,7 @@
         
                     <div class="row header-wrapper">
                         
-                        <img src="images/logo_mobile.png" class="logo"/>
+                        <img src="images/logo.png" class="logo" alt="Mermaid Swim School emblem"/>
                             
                         <div class="middle">
             
@@ -28,17 +30,17 @@
                             </h2>
                         </div>
         
-                        <!-- This navbar is for mobile or smaller screens (hamburger) -->
+                        <!-- Hamburger navbar mobile -->
                         
-                        <div class="hamburger-icon-mobile">
+                        <div class="hamburger-icon-mobile hidden-lg" onclick="myFunction()">
                             <img src="images/hamburger_mobile.png" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
                             aria-expanded="false" aria-label="Toggle navigation"/>
                         </div>
         
-                    </div>
+                    </div> <!-- end header-wrapper -->
                     
-                    <!-- This navbar is for larger screens or desktops, and animates -->
-                    <div class="container-fluid navigation-container">
+                    <!-- Button navbar desktop -->
+                    <div class="container-fluid navigation-container-lg hidden-sm">
                         <div class="row">
         
                             <div class="col" id="nav1">
@@ -61,7 +63,7 @@
                     </div> <!-- end navigation-container -->
                         
                     <!-- Collapsible content, mobile, after header-wrapper -->
-                    <div class="hamburger navigation-container-mobile collapse navbar-collapse" id="navbarSupportedContent1">
+                    <div class="hamburger navigation-container-sm collapse navbar-collapse" id="navbarSupportedContent1">
                         
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
@@ -110,5 +112,16 @@
                     </p>
                 </div>
             </div>
+
+        <script>
+            const myFunction = () => {
+            const x = document.querySelector(".navigation-container-sm");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+            }
+        </script>
         </body>
 </html>

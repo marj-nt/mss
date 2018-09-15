@@ -7,6 +7,7 @@
         <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
         <link rel="stylesheet" href="css/MSS_styles.css">
+        
         <title>
             Mermaid's Swim School
         </title>
@@ -15,7 +16,7 @@
 
             <div class="row header-wrapper">
                 
-                <img src="images/logo_mobile.png" class="logo"/>
+                <img src="images/logo.png" class="logo" alt="Mermaid Swim School emblem"/>
                     
                 <div class="middle">
     
@@ -29,17 +30,17 @@
                     </h2>
                 </div>
 
-                <!-- This navbar is for mobile or smaller screens (hamburger) -->
+                <!-- Hamburger navbar mobile -->
                 
-                <div class="hamburger-icon-mobile">
+                <div class="hamburger-icon-mobile hidden-lg">
                     <img src="images/hamburger_mobile.png" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
                     aria-expanded="false" aria-label="Toggle navigation"/>
                 </div>
 
-            </div>
+            </div> <!-- end header-wrapper -->
             
-            <!-- This navbar is for larger screens or desktops, and animates -->
-            <div class="container-fluid navigation-container">
+            <!-- Button navbar desktop -->
+            <div class="container-fluid navigation-container-lg hidden-sm">
                 <div class="row">
 
                     <div class="col" id="nav1">
@@ -62,7 +63,7 @@
             </div> <!-- end navigation-container -->
                 
             <!-- Collapsible content, mobile, after header-wrapper -->
-            <div class="hamburger navigation-container-mobile collapse navbar-collapse" id="navbarSupportedContent1">
+            <div class="hamburger navigation-container-sm collapse navbar-collapse" id="navbarSupportedContent1">
                 
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -87,23 +88,20 @@
         </div> <!-- end rectangle-header -->
         
     </head>
-
-        
-    </head>
     
     <body>
 
-        <div class="body-top-ocean body-top-sandy-mobile">
+        <div class="body-top-ocean" id="body-top-ocean-about">
 
-            <div class="about-makenna-background"> <!-- hidden in mobile -->
+            <div class="about-makenna-background hidden-sm"> <!-- hidden in mobile -->
                 
-                <h4 class="red-script about-makenna-title-mobile animated fadeInUp">About Makenna</h4>
+                <h4 class="red-script animated fadeInUp about-title-lg">About Makenna</h4>
 
-                <div class="makenna-pic-container animated fadeIn">
+                <div class="makenna-pic-lg animated fadeIn">
                     <img src="images/makenna_icon.png"/>
                 </div>
 
-                <div class="about-makenna-text-container animated fadeIn">
+                <div class="about-text-container-lg animated fadeIn">
                     <p> Instructor Makenna Mason has been passionately
                     swimming since the age of 6 and has taught and coached
                     for 4+ years.  She is certified in CPR, first aid,
@@ -120,15 +118,15 @@
 
             </div> <!-- end about-makenna-background-->
             
-            <div class="about-makenna-container-mobile">
+            <div class="about-makenna-container-sm hidden-lg">
                     
-                    <div class="makenna-pic-mobile animated fadeIn">
+                    <div class="makenna-pic-sm animated fadeIn">
                         <img src="images/makenna_icon.png"/>
                     </div>
 
-                    <h4 class="red-script about-makenna-title-mobile animated fadeInUp">About Makenna</h4>
+                    <h4 class="red-script animated fadeInUp about-title-sm">About Makenna</h4>
     
-                    <div class="about-makenna-text-container-mobile animated fadeIn">
+                    <div class="about-text-container-sm animated fadeIn">
                         <p> Instructor Makenna Mason has been passionately
                         swimming since the age of 6 and has taught and coached
                         for 4+ years.  She is certified in CPR, first aid,

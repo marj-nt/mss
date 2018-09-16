@@ -854,10 +854,6 @@ input[type=submit]:hover {
     and (min-device-width : 375px) 
     and (max-device-width : 812px)
     and (-webkit-device-pixel-ratio : 3),
-    /* iPad */
-    screen 
-    and (min-device-width : 768px) 
-    and (max-device-width : 1024px),
     /* Galaxy S4 */
     screen 
     and (device-width: 320px) 
@@ -880,14 +876,17 @@ input[type=submit]:hover {
 
 
      @media (max-width: 768px) {
-         .hidden-sm {
-             display: none !important;
-         }
-
          .goals-row {
             display: inline-block;
         }
      }
+
+     @media (min-width: 768px) {
+         .goals-row {
+             display: flex;
+         }
+     }
+
      @media (min-width: 768px) {
          .hidden-lg {
              display: none !important;

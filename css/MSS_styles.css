@@ -71,6 +71,13 @@
         transform: scale(1.3);
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
 /* Hidden aspects on desktop/otherwise */
 
 .header-wrapper {
@@ -317,6 +324,8 @@
 
 .index-pics-sm img {
     width: 100%;
+
+    z-index: -1;
 }
 
 .index-pics-sm .btn{
@@ -338,7 +347,6 @@
     display: block;
     position: relative;
     
-    z-index: 1;
     top: -26vw;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -353,7 +361,6 @@
     display: block;
     position: relative;
 
-    z-index: 1;
     top: -20vw;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -863,7 +870,8 @@ input[type=submit]:hover {
     screen 
     and (device-width: 360px) 
     and (device-height: 640px) 
-    and (-webkit-device-pixel-ratio: 3) {
+    and (-webkit-device-pixel-ratio: 3),
+    screen and (min-width: 360px) and (max-width: 767px) {
     
         /* HIDDEN in screen size */
 

@@ -242,6 +242,11 @@
     border: 2px dashed green;
 }
 
+.logo-scheduling {
+    width: 30vw;
+    opacity: 0.7;
+}
+
 .hamburger-icon-mobile {
     position: absolute;
     top: 10px;
@@ -645,6 +650,10 @@
     padding: 2vw 0vw;
 }
 
+.in-progress img {
+    width: 100px;
+}
+
 .makenna-pic-sm img {
     width: 55vw;
 
@@ -694,26 +703,21 @@
     padding-top: 20px;
 }
 
-
-
-
-/*** SCHEDULING ***/
-
-#ready-to-book {
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.scheduling-intro p {
-    width: 75%;
+.scheduling-intro {
+    width: 90%;
     margin: 0 auto;
     text-align: center;
 
     font-family: "Poppins";
     color: #133A68;
-    font-size: 20px;
+    font-size: 2vw;
 
     letter-spacing: 1.5px;
     line-height: 30px;
+}
+
+.scheduling-intro p {
+    padding: 2vw 0vw;
 }
 
 
@@ -846,6 +850,11 @@ input[type=submit]:hover {
     letter-spacing: 1px;
 }
 
+.in-progress {
+    padding: 5vw 0vw;
+    padding-bottom: 10vw;
+}
+
 /** MOBILE DEVICES, portrait and landscape **/
 
     /* iPhone 8 */
@@ -879,437 +888,457 @@ input[type=submit]:hover {
             display: none !important;
         }
 
-     }
+    } /* End of small css */
 
-
-
-     @media (max-width: 768px) {
-         .goals-row {
-            display: inline-block;
-        }
-     }
-
-     @media (min-width: 768px) {
-         .goals-row {
-             display: flex;
-         }
-     }
-
-     @media (min-width: 768px) {
-         .hidden-lg {
-             display: none !important;
-         }
-
-         .middle {
-            position: relative;
-            left: 3.5%;
-            display: inline-block;
-         }
-
-         .tagline {
-             font-size: 2vw;
-             position: relative;
-             left: 1.25%;
-         }
-
-         .red-script {
-             font-size: 3.33vw;
-         }
-
-         .kids-container img {
-            box-sizing: border-box;
-            padding: 0vw 8vw; /*10 top and bottom, 30 left and right*/
-        }
-        
-        .kids-container {
-        
-            width: 100%;
-            text-align: center;
-            margin: 0 auto;
-        
-            background-color: #C4EAF7;
-        
-        }
-
-         .home-intro-text {
-            width: 45%;
-            margin: 0 auto;
-            padding: 50px 0px; /*top and bottom*/
-            
-            font-size: 20px;
-            letter-spacing: 1.5px;
-            line-height: 27px;
-
-            text-align: left;
-         }
-
-         #home-intro-bottom {
-             margin-top: 0vw;
-         }
-
-        .index-pics-lg {
-            width: 100%;
-        }
-
-        .index-pics-lg img {
-            box-sizing: border-box;
-            padding: 0vw 2vw;
-        }
-
-         .goals-container {
-            width: 80%;
-            margin: 0 auto; 
-            text-align: center;
-        }
-
-        #goals-title {
-            border-bottom: 1px solid #4A90E2;
-        }
-
+    @media (max-width: 768px) {
         .goals-row {
-            width: 100%;
+        display: inline-block;
+    }
+    }
+
+    @media (min-width: 768px) {
+        .goals-row {
             display: flex;
         }
+    }
 
-        .goals-col {
-            box-sizing: border-box;
-            padding: 25px;
-        }
-
-        .goals-col img {
-            padding: 2vw 0vw;
-            text-align: center;
-        }
-        
-        .goals-heading {
-            
-            font-size: 2.4vw;
-            letter-spacing: 0.1vw;
-            line-height: 1vw;
-        
-            text-align: center;
-            box-sizing: border-box;
-            padding: 2vw 0vw;
-        }
-        
-        .goals-text {
-        
-            width: 100%;
-            margin: 0 auto;
-            box-sizing: border-box;
-            padding: 10px 0px;
-        
-            font-size: 16px;
-            letter-spacing: 1.5px;
-            line-height: 27px;
-        
-            text-align: center;
-        
+    /* Beginning of Desktop and bigger */
+    @media (min-width: 768px) {
+        .hidden-lg {
+            display: none !important;
         }
 
-        .certif-container-lg {
-            width: 50%;
-            margin: 0 auto;
-            text-align: center;
-
-            box-sizing: border-box;
-            padding: 5vw 0vw;
+        .middle {
+        position: relative;
+        left: 3.5%;
+        display: inline-block;
         }
 
-        .certif-row-lg {
-            font-family: "Megan June";
+        .tagline {
+            font-size: 2vw;
+            position: relative;
+            left: 1.25%;
         }
-        
-        .certif-col-lg{
-            width: 50%;
+
+        .red-script {
+            font-size: 3.33vw;
         }
+
+        .kids-container img {
+        box-sizing: border-box;
+        padding: 0vw 8vw; /*10 top and bottom, 30 left and right*/
+    }
+    
+    .kids-container {
+    
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    
+        background-color: #C4EAF7;
+    
+    }
+
+        .home-intro-text {
+        width: 45%;
+        margin: 0 auto;
+        padding: 50px 0px; /*top and bottom*/
         
-        .certif-container-lg img {
-            width: 75%;
-            padding: 2.08vw 0vw;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 27px;
+
+        text-align: left;
         }
-        
-         .services-container-lg {
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-            line-height: 1.9vw;
-        
-            
+
+        #home-intro-bottom {
+            margin-top: 0vw;
         }
+
+    .index-pics-lg {
+        width: 100%;
+    }
+
+    .index-pics-lg img {
+        box-sizing: border-box;
+        padding: 0vw 2vw;
+    }
+
+        .goals-container {
+        width: 80%;
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    #goals-title {
+        border-bottom: 1px solid #4A90E2;
+    }
+
+    .goals-row {
+        width: 100%;
+        display: flex;
+    }
+
+    .goals-col {
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+    .goals-col img {
+        padding: 2vw 0vw;
+        text-align: center;
+    }
+    
+    .goals-heading {
         
+        font-size: 2.4vw;
+        letter-spacing: 0.1vw;
+        line-height: 1vw;
+    
+        text-align: center;
+        box-sizing: border-box;
+        padding: 2vw 0vw;
+    }
+    
+    .goals-text {
+    
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 10px 0px;
+    
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 27px;
+    
+        text-align: center;
+    
+    }
+
+    .certif-container-lg {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+
+        box-sizing: border-box;
+        padding: 5vw 0vw;
+    }
+
+    .certif-row-lg {
+        font-family: "Megan June";
+    }
+    
+    .certif-col-lg{
+        width: 50%;
+    }
+    
+    .certif-container-lg img {
+        width: 75%;
+        padding: 2.08vw 0vw;
+    }
+    
         .services-container-lg {
-            box-sizing: border-box;
-            padding: 5vw 0vw;
-        }
-
-        #services-col-lg-left {
-            background: linear-gradient(to right bottom,
-            #D1284A 50%, #D0021B 50%);
-
-            box-sizing: border-box;
-            padding: 3.82vw 0vw;
-        }
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.9vw;
+    
         
-        #services-col-lg-right {
-            background: linear-gradient(to right bottom,
-            #4FC0F8 50%, #44B8F8 50%);
+    }
+    
+    .services-container-lg {
+        box-sizing: border-box;
+        padding: 5vw 0vw;
+    }
 
-            box-sizing: border-box;
-            padding: 3.82vw 0vw;
-        }
-        
-        .services-lg-white-heading {
-            font-family: "SignPainter";
-            color: white;
-            font-size: 4.17vw;
-        }
-        
-        #services-col-lg-left a:hover, #services-col-lg-right a:hover {
-            text-decoration: none;
-        }
-        
-        #services-col-lg-left h3:hover, #services-col-lg-right h3:hover {
-            color: #EFEB8B;
-        }
+    #services-col-lg-left {
+        background: linear-gradient(to right bottom,
+        #D1284A 50%, #D0021B 50%);
 
-        .programs-title {
-            box-sizing: border-box;
-            padding: 45px 0px;
-        }
+        box-sizing: border-box;
+        padding: 3.82vw 0vw;
+    }
+    
+    #services-col-lg-right {
+        background: linear-gradient(to right bottom,
+        #4FC0F8 50%, #44B8F8 50%);
 
-        .programs-container-lg {
-            width: 75%;
-            margin: 0 auto;
-            text-align: center;
-        
-            box-sizing: border-box;
-        }
+        box-sizing: border-box;
+        padding: 3.82vw 0vw;
+    }
+    
+    .services-lg-white-heading {
+        font-family: "SignPainter";
+        color: white;
+        font-size: 4.17vw;
+    }
+    
+    #services-col-lg-left a:hover, #services-col-lg-right a:hover {
+        text-decoration: none;
+    }
+    
+    #services-col-lg-left h3:hover, #services-col-lg-right h3:hover {
+        color: #EFEB8B;
+    }
 
-        .programs-heading-lg {
-            font-family: "Megan June";
-            color: #133A68;
-            font-size: 30px;
-        
-            box-sizing: border-box;
-            padding-top: 30px;
-        
-            letter-spacing: 1.25px;
-            line-height: 31px;
-        }
+    .programs-title {
+        box-sizing: border-box;
+        padding: 45px 0px;
+    }
 
-        .pp-images-lg {
-            width: 20vw;
-        }
+    .programs-container-lg {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    
+        box-sizing: border-box;
+    }
 
-        .programs-description-lg {
-            font-family: "Poppins";
-            color: #4A4A4A;
-            font-size: 18px;
-        
-            letter-spacing: 1.33px;
-            line-height: 23px;
-        }
+    .programs-heading-lg {
+        font-family: "Megan June";
+        color: #133A68;
+        font-size: 30px;
+    
+        box-sizing: border-box;
+        padding-top: 30px;
+    
+        letter-spacing: 1.25px;
+        line-height: 31px;
+    }
 
-        .learn-more {
-            background-color: transparent;
-            border: none;
-         }
+    .pp-images-lg {
+        width: 20vw;
+    }
 
-         .swimmers-age p {
-            margin: 0 auto;
-            text-align: center;
-        
-            font-family: "Freight";
-            color: #133A68;
-            font-size: 18px;
-        
-            letter-spacing: 1px;
-            line-height: 30px;
-        
-            box-sizing: border-box;
-        }
+    .programs-description-lg {
+        font-family: "Poppins";
+        color: #4A4A4A;
+        font-size: 18px;
+    
+        letter-spacing: 1.33px;
+        line-height: 23px;
+    }
 
-        .policies-container {
-            width: 80%;
-            margin: 0 auto;
-            font-size: 24px;
+    .learn-more {
+        background-color: transparent;
+        border: none;
         }
 
-        .our-policies-title {
-            padding: 3vw 0vw;
-        }
+        .swimmers-age p {
+        margin: 0 auto;
+        text-align: center;
+    
+        font-family: "Freight";
+        color: #133A68;
+        font-size: 18px;
+    
+        letter-spacing: 1px;
+        line-height: 30px;
+    
+        box-sizing: border-box;
+    }
 
-        .skills-container-lg {
-            width: 75%;
-        
-            margin: 0 auto;
-            text-align: center;
+    .policies-container {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 24px;
+    }
 
-            box-sizing: border-box;
-            padding: 2vw 0vw;
-        }
+    .our-policies-title {
+        padding: 3vw 0vw;
+    }
 
-        .skills-heading-lg {
-            font-family: "Megan June";
-            font-size: 30px;
-            color: #D0021B;
-        }
+    .skills-container-lg {
+        width: 75%;
+    
+        margin: 0 auto;
+        text-align: center;
 
-        .skills-text-lg {
-            font-family: "Poppins";
-            color: #133A68;
-            font-size: 16px;
-        
-            box-sizing: border-box;
-            padding: 10px;
-        
-            line-height: 20px;
-        }
+        box-sizing: border-box;
+        padding: 2vw 0vw;
+    }
 
-        .seven-lessons-heading, .dont-give-up-heading {
-            font-family: "Megan June";
-            color: #D0021B;
-            font-size: 30px;
-            margin: -5px;
-            
-        }
+    .skills-heading-lg {
+        font-family: "Megan June";
+        font-size: 30px;
+        color: #D0021B;
+    }
 
-        .seven-lessons-container, .dont-give-up-container {
-            font-size: 18px;
-        
-            letter-spacing: 1px;
-            line-height: 30px;
-        
-            box-sizing: border-box;
-            padding: 30px 0px;
-        }
+    .skills-text-lg {
+        font-family: "Poppins";
+        color: #133A68;
+        font-size: 16px;
+    
+        box-sizing: border-box;
+        padding: 10px;
+    
+        line-height: 20px;
+    }
 
-        .safety-container, .scheduling-cancel-container, .pay-container {
-            width: 75%;
-            margin: 0 auto;
+    .seven-lessons-heading, .dont-give-up-heading {
+        font-family: "Megan June";
+        color: #D0021B;
+        font-size: 30px;
+        margin: -5px;
+        
+    }
 
-            font-size: 16px;
-            letter-spacing: 1.5px;
-            line-height: 25px;
-        }
+    .seven-lessons-container, .dont-give-up-container {
+        font-size: 18px;
+    
+        letter-spacing: 1px;
+        line-height: 30px;
+    
+        box-sizing: border-box;
+        padding: 30px 0px;
+    }
 
-        .safety-heading, .scheduling-cancel-heading, .payment-policy-heading,
-        .payment-deadlines-heading {
-            font-size: 1.94vw;
-        }
+    .safety-container, .scheduling-cancel-container, .pay-container {
+        width: 75%;
+        margin: 0 auto;
 
-        .about-text-container-lg {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 25px;
+    }
 
-            padding: 20px;
-            padding-top: 0px;
-            text-align: center;
-            max-width: 80%;
-            margin: 0 auto;
-        
-            font-family: "Freight";
-            size: 20px;
-            letter-spacing: 1.5px;
-            line-height: 35px;
-            color: #133A68;
-            text-align: left;
-        }
+    .safety-heading, .scheduling-cancel-heading, .payment-policy-heading,
+    .payment-deadlines-heading {
+        font-size: 1.94vw;
+    }
 
-        .about-title-lg {
-            font-size: 4vw;
-            
-            box-sizing: border-box;
-            padding: 2vw 0vw;
-        }
+    .ready-to-book-title {
+        padding: 2vw 0vw;
+    }
 
-        .makenna-pic-lg img {
-            width: 20vw;
+    .scheduling-intro {
+        width: 75%;
+ 
+        font-size: 1vw;
+    
+        letter-spacing: 1.5px;
+        line-height: 30px;
+    }
 
-            box-sizing: border-box;
-            padding: 3vw 0vw;
-            padding-top: 0vw;
-        }
+    .logo-scheduling {
+        width: 10vw;
+    }
 
-        .contact-me-title {
-            padding: 2vw 0vw;
-        }
+    .in-progress img {
+        width: 250px;
+    }
 
-       .map-container {
-            text-align: center;
-       }
-        
-        .map {
-            width: 75%;
-            margin: 0 auto;
-            height: 400px;
-        }
-        
-        
-        /***Social Media***/
-        
-        .social-media-container-lg {
-            width: 50%;
-            margin: 0 auto;
+    .about-text-container-lg {
 
-            box-sizing: border-box;
-            padding-bottom: 3vw;
-        
-        }
+        padding: 20px;
+        padding-top: 0px;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+    
+        font-family: "Freight";
+        size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 35px;
+        color: #133A68;
+        text-align: left;
+    }
 
-        .social-media-container-lg img {
-            width: 4vw;
-        }
+    .about-title-lg {
+        font-size: 4vw;
         
-        #facebook-col img, #twitter-col img, #instagram-col img {
-            max-width: 50%;
-            max-height: 100wv;
-        }
+        box-sizing: border-box;
+        padding: 2vw 0vw;
+    }
 
-        .form-container {
-            width: 75%;
-            margin: 0 auto;
-            box-sizing: border-box;
-            padding: 10px;
-            background: none;
-        
-        }
-        
-        
-        
-        .form-bottom {
-            box-sizing: border-box;
-            padding-left: 100px;
-        }
-        
-        input[type=text], select, textarea {
-            
-            display: block;
-            overflow: auto;
-            
-            width: 80%;
-            height: 4vw;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-sizing: border-box;
-            
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical;
-        
-        }
-        
-        .form-label {
-            font-family: "Poppins";
-            color: black;
-        }
-        
-        #messagebody {
-            width: 100%;
-            height: 20vw;
-        }
+    .makenna-pic-lg img {
+        width: 20vw;
 
-        .come-swim-title {
-            font-size: 2.5vw;
-        }
-     }
+        box-sizing: border-box;
+        padding: 3vw 0vw;
+        padding-top: 0vw;
+    }
+
+    .contact-me-title {
+        padding: 2vw 0vw;
+    }
+
+    .map-container {
+        text-align: center;
+    }
+    
+    .map {
+        width: 75%;
+        margin: 0 auto;
+        height: 400px;
+    }
+    
+    
+    /***Social Media***/
+    
+    .social-media-container-lg {
+        width: 50%;
+        margin: 0 auto;
+
+        box-sizing: border-box;
+        padding-bottom: 3vw;
+    
+    }
+
+    .social-media-container-lg img {
+        width: 4vw;
+    }
+    
+    #facebook-col img, #twitter-col img, #instagram-col img {
+        max-width: 50%;
+        max-height: 100wv;
+    }
+
+    .form-container {
+        width: 75%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 10px;
+        background: none;
+    
+    }
+    
+    
+    
+    .form-bottom {
+        box-sizing: border-box;
+        padding-left: 100px;
+    }
+    
+    input[type=text], select, textarea {
+        
+        display: block;
+        overflow: auto;
+        
+        width: 80%;
+        height: 4vw;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+        
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    
+    }
+    
+    .form-label {
+        font-family: "Poppins";
+        color: black;
+    }
+    
+    #messagebody {
+        width: 100%;
+        height: 20vw;
+    }
+
+    .come-swim-title {
+        font-size: 2.5vw;
+    }
+    }
